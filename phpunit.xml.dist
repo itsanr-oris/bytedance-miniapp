@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+            <exclude>
+                <directory suffix="ServiceProvider.php">src/</directory>
+                <directory suffix="Exception.php">src/</directory>
+                <directory suffix="TestCase.php">src/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="tests_build"/>
+        <log type="testdox-text" target="tests_build/test-dox.txt"/>
+    </logging>
+</phpunit>

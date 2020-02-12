@@ -1,0 +1,42 @@
+{
+    "name": "f-oris/easy-bytedance-miniapp",
+    "description": "字节跳动小程序SDK",
+    "keywords": [
+        "byte dance",
+        "miniapp",
+        "byte dance sdk",
+        "mini app sdk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "F.oris",
+            "email": "us@f-oris.me"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "f-oris/easy-sdk": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1",
+        "mockery/mockery": "^1.2",
+        "fzaninotto/faker": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyByteDance\\MiniApp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EasyByteDance\\MiniApp\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
