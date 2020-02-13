@@ -13,7 +13,7 @@
 
 - [x] 小程序登录
 - [x] 授权信息解密
-- [ ] 发送模板消息
+- [x] 发送模板消息
 - [x] 获取小程序二维码
 - [x] 设置数据缓存
 - [x] 删除数据缓存
@@ -24,7 +24,7 @@
 ## 安装
 
 ```bash
-composer require f-oris/easy-bytedance-miniapp:dev-master
+composer require f-oris/easy-bytedance-miniapp
 ```
 
 ## 基本使用
