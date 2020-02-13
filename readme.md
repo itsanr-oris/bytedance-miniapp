@@ -2,6 +2,13 @@
 
 字节跳动系小程序SDK，参照[easy-wechat](https://github.com/overtrue/wechat)实现
 
+[![Build Status](https://travis-ci.com/itsanr-oris/bytedance-miniapp.svg?branch=master)](https://travis-ci.com/itsanr-oris/bytedance-miniapp)
+[![codecov](https://codecov.io/gh/itsanr-oris/easy-bytedance-miniapp/branch/master/graph/badge.svg)](https://codecov.io/gh/itsanr-oris/easy-bytedance-miniapp)
+[![Latest Stable Version](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/v/stable)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
+[![Latest Unstable Version](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/v/unstable)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
+[![Total Downloads](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/downloads)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
+[![License](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/license)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
+
 ## 功能
 
 - [x] 小程序登录
@@ -17,7 +24,7 @@
 ## 安装
 
 ```bash
-composer require f-oris/easy-bytedance-miniapp
+composer require f-oris/easy-bytedance-miniapp:dev-master
 ```
 
 ## 基本使用
