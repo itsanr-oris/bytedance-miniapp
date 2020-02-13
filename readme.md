@@ -1,9 +1,9 @@
-## EasyToutiao/MiniProgram
+## EasyByteDance/MiniApp
 
 字节跳动系小程序SDK，参照[easy-wechat](https://github.com/overtrue/wechat)实现
 
 [![Build Status](https://travis-ci.com/itsanr-oris/bytedance-miniapp.svg?branch=master)](https://travis-ci.com/itsanr-oris/bytedance-miniapp)
-[![codecov](https://codecov.io/gh/itsanr-oris/easy-bytedance-miniapp/branch/master/graph/badge.svg)](https://codecov.io/gh/itsanr-oris/easy-bytedance-miniapp)
+[![codecov](https://codecov.io/gh/itsanr-oris/bytedance-miniapp/branch/master/graph/badge.svg)](https://codecov.io/gh/itsanr-oris/bytedance-miniapp)
 [![Latest Stable Version](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/v/stable)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
 [![Latest Unstable Version](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/v/unstable)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
 [![Total Downloads](https://poser.pugx.org/f-oris/easy-bytedance-miniapp/downloads)](https://packagist.org/packages/f-oris/easy-bytedance-miniapp)
