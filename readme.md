@@ -18,6 +18,7 @@
 - [x] 设置数据缓存
 - [x] 删除数据缓存
 - [x] 内容安全检查
+- [x] 服务端数据签名
 
 ## 安装
 
@@ -56,7 +57,7 @@ $kvList = [
     ['key' => 'custom-key', 'value' => 'custom-value']
 ];
 
-app->user_storage->set($openId, $sessionKey, $kvList);
+$app->user_storage->set($openId, $sessionKey, $kvList);
 
 ```
 
@@ -71,7 +72,43 @@ $openId = 'openid';
 $sessionKey = 'session_key';
 $keys = ['custom_key'];
 
-app->user_storage->remove($openId, $sessionKey, $keys);
+$app->user_storage->remove($openId, $sessionKey, $keys);
+
+```
+
+## 服务端数据签名
+
+```php
+// 配置好config
+
+$app = new Application($config);
+
+$data = [
+    'app_id' => '800000000001',
+    'merchant_id' => '1900000001',
+    'timestamp' => 1570694312,
+    'sign_type' => 'MD5',
+    'out_order_no' => '201900000000000001',
+    'total_amount' => 1,
+    'product_code' => 'pay',
+    'payment_type' => 'direct',
+    'trade_type' => 'H5',
+    'version' => '2.0',
+    'currency' => 'CNY',
+    'subject' => '测试订单',
+    'body' => '测试订单',
+    'uid' => '0000000000000001',
+    'trade_time' => 1570585744,
+    'valid_time' => 300,
+    'notify_url' => '',
+    'risk_info' => '{"ip":"120.230.0.0"}',
+    'wx_type' => 'MWEB',
+    'wx_url' => 'https://wx.tenpay.com/xxx',
+    'alipay_url' => 'app_id=2019000000000006&biz_content=xxxx'
+];
+
+$app->server->signature($data);
+// 0f1e3358a9898d7c4c6c23740251808a
 
 ```
 
