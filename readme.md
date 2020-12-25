@@ -24,7 +24,7 @@
 ## 安装
 
 ```bash
-composer require f-oris/bytedance-miniapp
+composer require f-oris/easy-bytedance-miniapp
 ```
 
 ## 基本使用
