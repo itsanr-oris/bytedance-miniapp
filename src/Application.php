@@ -19,6 +19,7 @@ use EasyByteDance\MiniApp\Http\ServiceProvider as HttpClientProvider;
  * @property \EasyByteDance\MiniApp\ContentSecurity\ContentSecurity $content_security
  * @property \EasyByteDance\MiniApp\UserStorage\UserStorage         $user_storage
  * @property \EasyByteDance\MiniApp\Server\Server                   $server
+ * @property \EasyByteDance\MiniApp\Payment\TtPay                   $tt_pay
  */
 class Application extends ServiceContainer
 {
@@ -45,6 +46,7 @@ class Application extends ServiceContainer
         \EasyByteDance\MiniApp\ContentSecurity\ServiceProvider::class,
         \EasyByteDance\MiniApp\UserStorage\ServiceProvider::class,
         \EasyByteDance\MiniApp\Server\ServiceProvider::class,
+        \EasyByteDance\MiniApp\Payment\ServiceProvider::class,
     ];
 
     /**

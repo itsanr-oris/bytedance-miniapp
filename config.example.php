@@ -18,6 +18,11 @@ return [
     'app_secret' => '',
 
     /**
+     * tt_pay app_secret
+     */
+    'payment_secret' => '',
+
+    /**
      * log config
      */
     'log' => [
